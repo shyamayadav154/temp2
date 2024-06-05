@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    eslint:{
-        ignoreDuringBuilds:true
+    eslint: {
+        ignoreDuringBuilds: true,
     },
-    images:{
-        domains:['images.unsplash.com']
-    }
+    images: {
+        domains: ["images.unsplash.com"],
+    },
+}
 
-};
-
-export default nextConfig;
+export default nextConfig
