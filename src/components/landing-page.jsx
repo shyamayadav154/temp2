@@ -33,6 +33,11 @@ import Footer from "./footer"
 import NavBarTui from "./navtui"
 import { Navbar } from "./navbar"
 
+const pimg1='https://asa-equipments.com/wp-content/uploads/2021/02/Engine-Gears-Pinions-1.jpeg'
+const pimg2='https://asa-equipments.com/wp-content/uploads/2021/02/Piston-Pins.jpeg'
+const pimg3='https://asa-equipments.com/wp-content/uploads/2021/02/Connecting-Rod-Fork-blade.jpg'
+const pimg4='https://asa-equipments.com/wp-content/uploads/2021/02/Manifold-Assemblies.jpg'
+
 export function LandingPage() {
     return (
         <div className="flex min-h-[100dvh] flex-col">
@@ -226,7 +231,7 @@ export function LandingPage() {
                     </div>
                 </section>
                 <section className="w-full py-12 md:py-24 lg:py-32">
-                    <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div className="flex  flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Product in Details</h2>
                             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -238,7 +243,7 @@ export function LandingPage() {
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-20">
                         <div data-aos='fade-right'>
                             <img
-                                src="/placeholder.svg"
+                                src={pimg1}
                                 alt="Product Image"
                                 width={600}
                                 height={600}
@@ -258,7 +263,7 @@ export function LandingPage() {
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
                         <div data-aos='fade-left' className=" md:order-2 ">
                             <img
-                                src="/placeholder.svg"
+                                src={pimg2}
                                 alt="Product Image"
                                 width={600}
                                 height={600}
@@ -276,7 +281,7 @@ export function LandingPage() {
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-20">
                         <div data-aos='fade-right'>
                             <img
-                                src="/placeholder.svg"
+                                src={pimg2}
                                 alt="Product Image"
                                 width={200}
                                 height={200}
@@ -296,7 +301,7 @@ export function LandingPage() {
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
                         <div className="md:order-2" data-aos='fade-left'>
                             <img
-                                src="/placeholder.svg"
+                                src={pimg4}
                                 alt="Product Image"
                                 width={600}
                                 height={600}

@@ -20,6 +20,9 @@ To read more about using these font, please visit the Next.js documentation:
 import Autoplay from "embla-carousel-autoplay"
 import { CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
 import { useRef } from "react"
+const img1 ='https://images.unsplash.com/photo-1542690563-ca10289ac117?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+const img2 ='https://images.unsplash.com/photo-1442570468985-f63ed5de9086?q=80&w=2420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+const img3 ='https://images.unsplash.com/photo-1426086800127-2601510ca027?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 
 export function CarouselSh() {
     return (
@@ -28,7 +31,7 @@ export function CarouselSh() {
                 className="flex-1"
                 plugins={[
                     Autoplay({
-                        delay: 20000,
+                        delay: 2000,
                     }),
                 ]}
             >
@@ -37,9 +40,9 @@ export function CarouselSh() {
                         <div className="relative h-full w-full">
                             <img
                                 alt="Hero Image 1"
-                                className="h-full w-full object-cover"
+                                className="h-full w-full object-cover brightness-50"
                                 height="800"
-                                src="/placeholder.svg"
+                                src={img1}
                                 style={{
                                     aspectRatio: "1600/800",
                                     objectFit: "cover",
@@ -48,7 +51,7 @@ export function CarouselSh() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
-                                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl backdrop-opacity-80">
                                     Powerful Locomotive Solutions
                                 </h1>
                                 <p className="max-w-md text-lg md:text-xl">
@@ -61,9 +64,9 @@ export function CarouselSh() {
                         <div className="relative h-full w-full">
                             <img
                                 alt="Hero Image 2"
-                                className="h-full w-full object-cover"
+                                className="h-full w-full object-cover brightness-50"
                                 height="800"
-                                src="/placeholder.svg"
+                                src={img2}
                                 style={{
                                     aspectRatio: "1600/800",
                                     objectFit: "cover",
@@ -85,9 +88,9 @@ export function CarouselSh() {
                         <div className="relative h-full w-full">
                             <img
                                 alt="Hero Image 3"
-                                className="h-full w-full object-cover"
+                                className="h-full w-full object-cover brightness-50"
                                 height="800"
-                                src="/placeholder.svg"
+                                src={img3}
                                 style={{
                                     aspectRatio: "1600/800",
                                     objectFit: "cover",
