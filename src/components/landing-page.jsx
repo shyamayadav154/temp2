@@ -50,10 +50,10 @@ export function LandingPage() {
           <div className="absolute inset-0 bg-gray-900/50 z-10" />
           <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 md:px-6 text-center space-y-6">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight">
-      Ready to Keep Your Locomotives Running?
+          Ready to Keep Your Locomotives Running?
             </h1>
             <p className="max-w-[700px] text-gray-300 md:text-xl">
-ASA Engine Equipment is a supplier of locomotive engine parts to railroad operators, rebuilders and marine industries around the world.
+          ASA Engine Equipment is a supplier of locomotive engine parts to railroad operators, rebuilders and marine industries around the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
