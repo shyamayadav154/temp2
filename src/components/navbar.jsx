@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
+export const logoImg = 'https://asa-equipments.com/wp-content/uploads/2021/02/ASA_new_logo_final.png'
+
 export function Navbar() {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true)
     const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -27,13 +29,14 @@ export function Navbar() {
     }, [prevScrollPos])
 
 
+
     return (
         <>
-            <header className={` ${isNavbarVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} fixed left-1/2 md:top-5 z-50 w-full md:max-w-[800px] -translate-x-1/2 md:rounded-[1000px] bg-white shadow-lg dark:bg-gray-950`}>
+            <header className={`  fixed left-1/2 md:top-5 z-50 w-full md:max-w-[800px] -translate-x-1/2 md:rounded-[1000px] bg-white shadow-lg dark:bg-gray-950`}>
                 <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
                     <Link className="flex items-center" href="#">
                         <img
-                            src="https://asa-equipments.com/wp-content/uploads/2021/02/ASA_new_logo_final.png"
+                            src={logoImg}
                             width={75}
                             height={75}
                         />
@@ -54,7 +57,7 @@ export function Navbar() {
                     </nav>
                 </div>
             </header>
-                <div className="mb-14"/>
+                <div className=" mb-20 md:mb-14"/>
         </>
     )
 }

@@ -51,10 +51,10 @@ export function CarouselSh() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
-                                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl backdrop-opacity-80">
+                                <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl ">
                                     Powerful Locomotive Solutions
                                 </h1>
-                                <p className="max-w-md text-lg md:text-xl">
+                                <p className="max-w-md  md:text-xl">
                                     Discover the ultimate platform to bring your ideas to life.
                                 </p>
                             </div>
@@ -75,10 +75,10 @@ export function CarouselSh() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
-                                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                                <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                     Powering the Railroad Industry
                                 </h1>
-                                <p className="max-w-md text-lg md:text-xl">
+                                <p className="max-w-md md:text-xl">
                                     Unlock the power of cutting-edge design tools and features.
                                 </p>
                             </div>
@@ -99,10 +99,10 @@ export function CarouselSh() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
-                                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                                <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                     Premium Locomotive Engine Parts
                                 </h1>
-                                <p className="max-w-md text-lg md:text-xl">
+                                <p className="max-w-md md:text-xl">
                                     Transform your ideas into stunning, high-performing websites.
                                 </p>
                             </div>

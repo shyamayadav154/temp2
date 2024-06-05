@@ -41,8 +41,8 @@ const pimg4='https://asa-equipments.com/wp-content/uploads/2021/02/Manifold-Asse
 export function LandingPage() {
     return (
         <div className="flex min-h-[100dvh] flex-col">
-            {/* <NavBarTui/> */}
-            <Navbar />
+             <NavBarTui/>
+            {/* <Navbar /> */}
             <main className="flex-1">
                 <section>
                     <CarouselSh />
