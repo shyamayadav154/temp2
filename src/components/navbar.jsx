@@ -21,27 +21,33 @@ import Link from "next/link"
 
 export function Navbar() {
     return (
-        <header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950">
-            <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-                <Link className="flex items-center" href="#">
-                    <img src="https://asa-equipments.com/wp-content/uploads/2021/02/ASA_new_logo_final.png" width={75} height={75} />
-                </Link>
-                <nav className="flex items-center space-x-6">
-                    <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
-                        Home
+        <>
+            <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-full max-w-[800px] bg-white shadow-lg dark:bg-gray-950 rounded-[1000px]">
+                <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+                    <Link className="flex items-center" href="#">
+                        <img
+                            src="https://asa-equipments.com/wp-content/uploads/2021/02/ASA_new_logo_final.png"
+                            width={75}
+                            height={75}
+                        />
                     </Link>
-                    <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
-                        About
-                    </Link>
-                    <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
-                        Services
-                    </Link>
-                    <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
-                        Contact
-                    </Link>
-                </nav>
-            </div>
-        </header>
+                    <nav className="flex items-center space-x-6">
+                        <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
+                            Home
+                        </Link>
+                        <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
+                            About
+                        </Link>
+                        <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
+                            Services
+                        </Link>
+                        <Link className="text-sm font-medium hover:underline hover:underline-offset-4" href="#">
+                            Contact
+                        </Link>
+                    </nav>
+                </div>
+            </header>
+        </>
     )
 }
 

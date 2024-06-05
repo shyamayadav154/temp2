@@ -25,23 +25,18 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-import Link from "next/link"
-import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
-import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Carousel } from "react-responsive-carousel"
-import FullWidthCarousel from "./carousel"
-import { CarouselSh } from "./carousel-sh"
-import { Navbar } from "./navbar"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser } from "@fortawesome/free-solid-svg-icons"
-import { SectionFocus } from "./section-focus"
+import { Input } from "@/components/ui/input"
 import { CheckIcon, ClockIcon, StarIcon, ThumbsUpIcon } from "lucide-react"
+import { CarouselSh } from "./carousel-sh"
 import Footer from "./footer"
+import NavBarTui from "./navtui"
+import { Navbar } from "./navbar"
 
 export function LandingPage() {
     return (
         <div className="flex min-h-[100dvh] flex-col">
+            {/* <NavBarTui/> */}
             <Navbar />
             <main className="flex-1">
                 <section>
@@ -80,11 +75,11 @@ export function LandingPage() {
                 {/* </section> */}
 
                 <section className="w-full bg-gray-100 py-12 md:py-24 lg:py-32 dark:bg-gray-800">
-                    <div className="container mx-auto px-4 md:px-6">
+                    <div className="container mx-auto px-4 md:px-6" data-aos=''>
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <h2 className="mb-5 text-3xl font-bold tracking-tighter sm:text-5xl">About Us</h2>
-                                <article className="flex flex-col gap-6">
+                                <article className="flex flex-col gap-6" data-aos='fade-up'>
                                     <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                                         ASA Engine Equipment is a supplier of locomotive engine parts to railroad
                                         operators, rebuilders and marine industries around the world. An industry leader
@@ -129,7 +124,7 @@ export function LandingPage() {
                             </div>
                         </div>
                         <div className="items-middle mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-2">
-                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg">
+                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg" data-aos='fade-up'>
                                 {/* <img */}
                                 {/*   alt="Project 1" */}
                                 {/*   className="aspect-video overflow-hidden rounded-xl object-cover" */}
@@ -146,7 +141,7 @@ export function LandingPage() {
                                     serve All customers.
                                 </p>
                             </div>
-                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg">
+                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg" data-aos='fade-up'>
                                 {/* <img */}
                                 {/*   alt="Project 1" */}
                                 {/*   className="aspect-video overflow-hidden rounded-xl object-cover" */}
@@ -163,7 +158,7 @@ export function LandingPage() {
                                     quality assurance and continuous improvement.
                                 </p>
                             </div>
-                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg">
+                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg" data-aos='fade-up'>
                                 {/* <img */}
                                 {/*   alt="Project 2" */}
                                 {/*   className="aspect-video overflow-hidden rounded-xl object-cover" */}
@@ -180,7 +175,7 @@ export function LandingPage() {
                                     quote to delivery.
                                 </p>
                             </div>
-                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg">
+                            <div className="grid gap-1 rounded-lg bg-white p-6 shadow-lg" data-aos='fade-up'>
                                 {/* <img */}
                                 {/*   alt="Project 3" */}
                                 {/*   className="aspect-video overflow-hidden rounded-xl object-cover" */}
@@ -200,9 +195,9 @@ export function LandingPage() {
                     </div>
                 </section>
                 <section className="w-full bg-gray-100 py-12 md:py-24 lg:py-32 dark:bg-gray-800">
-                    <div className="container mx-auto flex flex-col gap-7 px-4 md:px-6">
+                    <div className="container mx-auto flex flex-col gap-20 px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className="space-y-2">
+                            <div className="space-y-2" data-aos='fade-up'>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Products</h2>
                                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                                     ASA Engine Equipment has a team of experienced professionals who specialize in a
@@ -211,7 +206,7 @@ export function LandingPage() {
                                 </p>
                             </div>
                         </div>
-                        <div className="mx-auto grid max-w-5xl items-start gap-8 text-center sm:grid-cols-2 md:gap-20 lg:grid-cols-3">
+                        <div className="mx-auto grid max-w-5xl items-start gap-8 text-center sm:grid-cols-2 md:gap-20 lg:grid-cols-3" data-aos='fade-up'>
                             <div className="grid gap-1">
                                 <BuildingIcon className="mx-auto h-20 w-20 text-gray-500 dark:text-gray-400" />
                                 <h3 className="text-lg font-bold">EMD</h3>
@@ -241,7 +236,7 @@ export function LandingPage() {
                         </div>
                     </div>
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-20">
-                        <div>
+                        <div data-aos='fade-right'>
                             <img
                                 src="/placeholder.svg"
                                 alt="Product Image"
@@ -261,7 +256,7 @@ export function LandingPage() {
                         </div>
                     </div>
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
-                        <div className="order-2">
+                        <div data-aos='fade-left' className=" md:order-2 ">
                             <img
                                 src="/placeholder.svg"
                                 alt="Product Image"
@@ -270,7 +265,7 @@ export function LandingPage() {
                                 className="aspect-square w-full overflow-hidden rounded-lg border border-gray-200 object-cover dark:border-gray-800"
                             />
                         </div>
-                        <div className="order-1 space-y-4 md:space-y-6">
+                        <div className="md:order-1 space-y-4 md:space-y-6">
                             <h2 className="text-3xl font-bold md:text-3xl">Piston & Pins</h2>
                             <p className="text-lg leading-relaxed text-gray-500 md:text-xl dark:text-gray-400">
                                 In an Internal combustion engine, the Piston pin connects the piston to the connecting
@@ -279,7 +274,7 @@ export function LandingPage() {
                         </div>
                     </div>
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-20">
-                        <div>
+                        <div data-aos='fade-right'>
                             <img
                                 src="/placeholder.svg"
                                 alt="Product Image"
@@ -299,7 +294,7 @@ export function LandingPage() {
                         </div>
                     </div>
                     <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
-                        <div className="order-2">
+                        <div className="md:order-2" data-aos='fade-left'>
                             <img
                                 src="/placeholder.svg"
                                 alt="Product Image"
@@ -308,7 +303,7 @@ export function LandingPage() {
                                 className="aspect-square w-full overflow-hidden rounded-lg border border-gray-200 object-cover dark:border-gray-800"
                             />
                         </div>
-                        <div className="order-1 space-y-4 md:space-y-6">
+                        <div className="md:order-1 space-y-4 md:space-y-6">
                             <h2 className="text-3xl font-bold md:text-3xl">Manifold Assemblies</h2>
                             <p className="text-lg leading-relaxed text-gray-500 md:text-xl dark:text-gray-400">
                                 This EMS 64 fabricated exhaust manifold finds usage in different horsepower ratings of

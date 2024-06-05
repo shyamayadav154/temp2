@@ -28,11 +28,11 @@ export function CarouselSh() {
                 className="flex-1"
                 plugins={[
                     Autoplay({
-                        delay: 2000,
+                        delay: 20000,
                     }),
                 ]}
             >
-                <CarouselContent>
+                <CarouselContent className='max-h-[600px]'>
                     <CarouselItem>
                         <div className="relative h-full w-full">
                             <img
