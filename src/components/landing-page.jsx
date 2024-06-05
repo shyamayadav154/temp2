@@ -260,8 +260,8 @@ export function LandingPage() {
                             </p>
                         </div>
                     </div>
-                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
-                        <div data-aos='fade-left' className=" md:order-2 ">
+                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12 overflow-hidden">
+                        <div data-aos='fade-left' className="md:order-2 ">
                             <img
                                 src={pimg2}
                                 alt="Product Image"
@@ -278,13 +278,13 @@ export function LandingPage() {
                             </p>
                         </div>
                     </div>
-                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-20">
+                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-16 lg:gap-12 lg:py-12 ">
                         <div data-aos='fade-right'>
                             <img
-                                src={pimg2}
+                                src={pimg3}
                                 alt="Product Image"
-                                width={200}
-                                height={200}
+                                width={600}
+                                height={600}
                                 className="aspect-square w-full overflow-hidden rounded-lg border border-gray-200 object-cover dark:border-gray-800"
                             />
                         </div>
@@ -298,7 +298,7 @@ export function LandingPage() {
                             </p>
                         </div>
                     </div>
-                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12">
+                    <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-6 md:grid-cols-2 md:px-6 md:py-10 lg:gap-12 lg:py-12 overflow-hidden">
                         <div className="md:order-2" data-aos='fade-left'>
                             <img
                                 src={pimg4}
