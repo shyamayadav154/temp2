@@ -32,6 +32,7 @@ import { CarouselSh } from "./carousel-sh"
 import Footer from "./footer"
 import NavBarTui from "./navtui"
 import { Navbar } from "./navbar"
+import { NavLat } from "./nav-lat"
 
 const pimg1='https://asa-equipments.com/wp-content/uploads/2021/02/Engine-Gears-Pinions-1.jpeg'
 const pimg2='https://asa-equipments.com/wp-content/uploads/2021/02/Piston-Pins.jpeg'
@@ -41,7 +42,8 @@ const pimg4='https://asa-equipments.com/wp-content/uploads/2021/02/Manifold-Asse
 export function LandingPage() {
     return (
         <div className="flex min-h-[100dvh] flex-col">
-             <NavBarTui/>
+            <NavLat/>
+             {/* <NavBarTui/> */}
             {/* <Navbar /> */}
             <main className="flex-1">
                 <section>
