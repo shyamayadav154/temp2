@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -6,26 +7,26 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-auto text-white mb-8 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2">ASA Engine Equipment</h4>
+            <h4 className="text-lg font-semibold mb-2">RRE India Pvt Ltd</h4>
             <p className="text-gray-400">© 2024 All rights reserved.</p>
           </div>
           <div className="w-full md:w-1/4 md:px-4 mb-8 md:mb-0">
-            <h4 className="text-lg font-semibold mb-4 text-white">Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Products</h4>
             <ul className="list-none text-gray-400">
               <li className="mb-4">
-                <a href="#" className="hover:text-white">
-                  Web Development
-                </a>
+                <Link href="/products/emd" className="hover:text-white">
+                  EMD
+                </Link>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-white">
-                  Mobile App Development
-                </a>
+                <Link href="/products/alco" className="hover:text-white">
+                  ALCO
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  UI/UX Design
-                </a>
+                <Link href="/products/ge" className="hover:text-white">
+                  GE
+                </Link>
               </li>
             </ul>
           </div>
@@ -33,19 +34,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="list-none text-gray-400">
               <li className="mb-4">
-                <a href="#" className="hover:text-white">
+                <Link href="#about" className="hover:text-white">
                   About
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:text-white">
-                  Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link href="#contact" className="hover:text-white">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,19 +49,19 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Legal</h4>
             <ul className="list-none text-gray-400">
               <li className="mb-4">
-                <a href="#" className="hover:text-white">
+                <Link href="#" className="hover:text-white">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:text-white">
+                <Link href="#" className="hover:text-white">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link href="#" className="hover:text-white">
                   Cookies Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -35,9 +35,9 @@ import { logoImg } from "./navbar"
 export function NavLat() {
     return (
         <>
-            <header className="fixed inset-0 top-5 z-10 mx-auto flex h-20 w-full max-w-[900px] shrink-0 items-center rounded-full bg-white px-4 shadow-lg md:px-6">
+            <header className="fixed inset-0 z-10 mx-auto flex h-20 w-full max-w-[900px] shrink-0 items-center bg-white px-4 shadow-lg md:top-5 md:rounded-full md:px-6">
                 <MobileNav />
-                <nav className="hidden w-full lg:flex">
+                <nav className="hidden w-full md:flex">
                     <DesktopNav />
                 </nav>
             </header>
@@ -48,11 +48,11 @@ export function NavLat() {
 
 export const DesktopNav = () => {
     return (
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between items-center">
             <div className="w-[150px]">
-                <Link className="flex hidden items-center gap-2 text-lg font-semibold lg:flex" href="/">
-                    <img className="h-12 w-auto" src={logoImg} alt="Your Company" />
-                    <span className="sr-only">Acme Inc</span>
+                <Link className="flex items-center gap-2 align-middle text-lg font-semibold md:flex" href="/">
+                    <span>RRE India Pvt Ltd</span>
+                    {/* <img className="h-12 w-auto" src={logoImg} alt="Your Company" /> */}
                 </Link>
             </div>
             <NavigationMenu>
@@ -65,67 +65,56 @@ export const DesktopNav = () => {
                             Home
                         </Link>
                     </NavigationMenuLink>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>
-                            <Link className="flex w-full items-center py-2" href="/products">
-                                Products
-                            </Link>
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <div className="grid w-[400px] p-2">
-                                <NavigationMenuLink asChild>
-                                    <Link
-                                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-                                        href="/products/emd"
-                                    >
-                                        <div className="text-sm font-medium leading-none group-hover:underline">
-                                            EMD
-                                        </div>
-                                        <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                            Learn more about our flagship product.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link
-                                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-                                        href="/products/alco"
-                                    >
-                                        <div className="text-sm font-medium leading-none group-hover:underline">
-                                            ALCO
-                                        </div>
-                                        <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                            Explore our latest product offering.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                                <NavigationMenuLink asChild>
-                                    <Link
-                                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-                                        href="/products/ge"
-                                    >
-                                        <div className="text-sm font-medium leading-none group-hover:underline">GE</div>
-                                        <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                            Check out our enterprise-grade solution.
-                                        </div>
-                                    </Link>
-                                </NavigationMenuLink>
-                            </div>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
+                    <NavigationMenu>
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger>
+                                <Link className="flex w-full items-center py-2" href="/products">
+                                    Products
+                                </Link>
+                            </NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                                <div className="grid w-[120px] p-2">
+                                    <NavigationMenuLink asChild>
+                                        <Link
+                                            className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                                            href="/products/emd"
+                                        >
+                                            <div className="text-sm font-medium leading-none group-hover:underline">
+                                                EMD
+                                            </div>
+                                        </Link>
+                                    </NavigationMenuLink>
+                                    <NavigationMenuLink asChild>
+                                        <Link
+                                            className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                                            href="/products/alco"
+                                        >
+                                            <div className="text-sm font-medium leading-none group-hover:underline">
+                                                ALCO
+                                            </div>
+                                        </Link>
+                                    </NavigationMenuLink>
+                                    <NavigationMenuLink asChild>
+                                        <Link
+                                            className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                                            href="/products/ge"
+                                        >
+                                            <div className="text-sm font-medium leading-none group-hover:underline">
+                                                GE
+                                            </div>
+                                        </Link>
+                                    </NavigationMenuLink>
+                                </div>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                    </NavigationMenu>
                     <NavigationMenuLink asChild>
                         <Link
                             className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-                            href="#"
+                            href="/contact"
                         >
                             Contact Us
                         </Link>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                        <Link
-                            className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-                            href="#"
-                        />
                     </NavigationMenuLink>
                 </NavigationMenuList>
             </NavigationMenu>
@@ -137,7 +126,7 @@ export const MobileNav = () => {
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Button className="lg:hidden" size="icon" variant="outline">
+                <Button className="md:hidden" size="icon" variant="outline">
                     <MenuIcon className="h-6 w-6" />
                     <span className="sr-only">Toggle navigation menu</span>
                 </Button>
@@ -214,8 +203,8 @@ export const MobileNav = () => {
                     <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
                         About
                     </Link>
-                    <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
-                        Contact
+                    <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/contact">
+                        Contact Us
                     </Link>
                 </nav>
             </SheetContent>

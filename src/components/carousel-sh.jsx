@@ -20,22 +20,25 @@ To read more about using these font, please visit the Next.js documentation:
 import Autoplay from "embla-carousel-autoplay"
 import { CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
 import { useRef } from "react"
-const img1 ='https://images.unsplash.com/photo-1542690563-ca10289ac117?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-const img2 ='https://images.unsplash.com/photo-1442570468985-f63ed5de9086?q=80&w=2420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-const img3 ='https://images.unsplash.com/photo-1426086800127-2601510ca027?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+const img1 =
+    "https://images.unsplash.com/photo-1542690563-ca10289ac117?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const img2 =
+    "https://images.unsplash.com/photo-1442570468985-f63ed5de9086?q=80&w=2420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const img3 =
+    "https://images.unsplash.com/photo-1426086800127-2601510ca027?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 export function CarouselSh() {
     return (
         <section className="flex w-full flex-col">
             <Carousel
-                className="flex-1"
+                className="flex-1 select-none"
                 plugins={[
                     Autoplay({
-                        delay: 2000,
+                        delay: 3000,
                     }),
                 ]}
             >
-                <CarouselContent className='max-h-[600px]'>
+                <CarouselContent className="max-h-[600px]">
                     <CarouselItem>
                         <div className="relative h-full w-full">
                             <img
@@ -51,12 +54,10 @@ export function CarouselSh() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
-                                <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl ">
-                                    Powerful Locomotive Solutions
+                                <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                                    RRE India: Driving Railway Excellence
                                 </h1>
-                                <p className="max-w-md  md:text-xl">
-                                    Discover the ultimate platform to bring your ideas to life.
-                                </p>
+                                <p className="max-w-md md:text-xl">Trusted Locomotive Engine Part Suppliers</p>
                             </div>
                         </div>
                     </CarouselItem>
@@ -78,9 +79,7 @@ export function CarouselSh() {
                                 <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                     Powering the Railroad Industry
                                 </h1>
-                                <p className="max-w-md md:text-xl">
-                                    Unlock the power of cutting-edge design tools and features.
-                                </p>
+                                <p className="max-w-md md:text-xl">Providing Quality Engine Parts for GE, EMD & ALCO</p>
                             </div>
                         </div>
                     </CarouselItem>
@@ -103,7 +102,7 @@ export function CarouselSh() {
                                     Premium Locomotive Engine Parts
                                 </h1>
                                 <p className="max-w-md md:text-xl">
-                                    Transform your ideas into stunning, high-performing websites.
+                                    Quality Locomotive Parts from India's Leading Supplier
                                 </p>
                             </div>
                         </div>

@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 function EMD() {
     return (
         <section className="container mx-auto flex flex-col gap-7 px-4 md:px-6">
             <h2 className="mb-5 text-center text-xl font-bold tracking-tighter sm:text-3xl">EMD Part List</h2>
             <div className="mx-auto w-full max-w-[800px]">
-                <AccordionDemo />
+                <AccordionEMD />
             </div>
         </section>
     )
@@ -14,9 +15,8 @@ function EMD() {
 
 export default EMD
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-export function AccordionDemo() {
+function AccordionEMD() {
     return (
         <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
@@ -113,21 +113,21 @@ export function AccordionDemo() {
     )
 }
 
-const TablWrapper = ({ children }) => {
+export const TablWrapper = ({ children }) => {
     return (
         <table className="w-full table-auto border">
             <thead className="">
                 <tr className="row1 divide-x  border-b font-bold">
-                    <td className="column0 style4 s px-4 py-4">
+                    <td className="column0 style4 s px-4 py-4 whitespace-nowrap">
                         <span>SL.NO.</span>
                     </td>
-                    <td className="column1 style4 s">
+                    <td className="column1 style4 px-8 s">
                         <span>OEM</span>
                     </td>
-                    <td className="column2 style4 s">
+                    <td className="column2 style4 s whitespace-nowrap px-8">
                         <span>OEM REF #</span>
                     </td>
-                    <td className="column3 style4 s">
+                    <td className="column3 style4 px-8 s">
                         <span>DESCRIPTION</span>
                     </td>
                 </tr>
@@ -755,11 +755,6 @@ const Emd = () => {
 const Emd10 = () => {
     return (
         <>
-            <tr className="row3 divide-x 93">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Turbocharger Parts</span>
-                </td>
-            </tr>
             <tr className="row3 divide-x 94">
                 <td className="column0 n whitespace-nowrap px-8 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-8 py-4">
@@ -1247,11 +1242,6 @@ const Emd10 = () => {
 const Emd9 = () => {
     return (
         <>
-            <tr className="row3 divide-x 52">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Traction Gears and Pinions</span>
-                </td>
-            </tr>
             <tr className="row3 divide-x 53">
                 <td className="column0 n whitespace-nowrap px-8 py-7">1</td>
                 <td className="column1 s whitespace-nowrap px-8 py-4">
@@ -1671,11 +1661,6 @@ const Emd9 = () => {
 const Emd8 = () => {
     return (
         <>
-            <tr className="row2 divide-x 09">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Radiator Assembly</span>
-                </td>
-            </tr>
             <tr className="row2 divide-x 10">
                 <td className="column0 n whitespace-nowrap px-8 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-8 py-4">
@@ -3103,11 +3088,6 @@ const Emd8 = () => {
 const Emd7 = () => {
     return (
         <>
-            <tr className="row1 divide-x 62">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Piston Rings</span>
-                </td>
-            </tr>
             <tr className="row1 divide-x 63">
                 <td className="column0 n whitespace-nowrap px-6 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-6 py-4">
@@ -3575,11 +3555,6 @@ const Emd7 = () => {
 const Emd6 = () => {
     return (
         <>
-            <tr className="row1 divide-x 28">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Exhaust Assembly Products</span>
-                </td>
-            </tr>
             <tr className="row1 divide-x 29">
                 <td className="column0 n whitespace-nowrap px-8 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-8 py-4">
@@ -3927,11 +3902,6 @@ const Emd6 = () => {
 const Emd5 = () => {
     return (
         <>
-            <tr className="row1 divide-x 09">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Engine Parts</span>
-                </td>
-            </tr>
             <tr className="row1 divide-x 10">
                 <td className="column0 n whitespace-nowrap px-6 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-6 py-4">
@@ -4121,11 +4091,6 @@ const Emd5 = () => {
 const Emd4 = () => {
     return (
         <>
-            <tr className="row1 divide-x 01">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Engine Gears</span>
-                </td>
-            </tr>
             <tr className="row1 divide-x 02">
                 <td className="column0 n whitespace-nowrap px-6 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-6 py-4">
@@ -4205,11 +4170,6 @@ const Emd4 = () => {
 const Emd3 = () => {
     return (
         <>
-            <tr className="row8 divide-x 8">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Critical Parts</span>
-                </td>
-            </tr>
             <tr className="row8 divide-x 9">
                 <td className="column0 n whitespace-nowrap px-6 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-6 py-4">
@@ -4357,11 +4317,6 @@ const Emd3 = () => {
 const Emd2 = () => {
     return (
         <>
-            <tr className="row6 divide-x 2">
-                <td className="column0 style1 s style3" colSpan={4}>
-                    <span>EMD Bearings</span>
-                </td>
-            </tr>
             <tr className="row6 divide-x 3">
                 <td className="column0 n whitespace-nowrap px-6 py-4">1</td>
                 <td className="column1 s whitespace-nowrap px-6 py-4">
