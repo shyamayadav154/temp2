@@ -133,8 +133,10 @@ export const MobileNav = () => {
             </SheetTrigger>
             <SheetContent side="left">
                 <Link className="flex items-center gap-2 text-lg font-semibold" href="#">
-                    <MountainIcon className="h-6 w-6" />
-                    <span className="sr-only">Acme Inc</span>
+                    <span>
+                        RRE India Pvt Ltd
+                    </span>
+                    <span className="sr-only">RRE India Pvt Ltd</span>
                 </Link>
                 <nav className="grid gap-2 py-6">
                     <Collapsible className="grid gap-4">
@@ -146,61 +148,17 @@ export const MobileNav = () => {
                             <div className="-mx-6 grid gap-6 bg-gray-100 p-6 dark:bg-gray-800">
                                 <Link className="group grid h-auto w-full justify-start gap-1" href="/products/emd">
                                     <div className="text-sm font-medium leading-none group-hover:underline">EMD</div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Learn more about our flagship product.
-                                    </div>
                                 </Link>
                                 <Link className="group grid h-auto w-full justify-start gap-1" href="/products/alco">
                                     <div className="text-sm font-medium leading-none group-hover:underline">ALCO</div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Explore our latest product offering.
-                                    </div>
                                 </Link>
                                 <Link className="group grid h-auto w-full justify-start gap-1" href="/products/ge">
-                                    <div className="text-sm font-medium leading-none group-hover:underline"></div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Check out our enterprise-grade solution.
-                                    </div>
+                                    <div className="text-sm font-medium leading-none group-hover:underline">GE</div>
                                 </Link>
                             </div>
                         </CollapsibleContent>
                     </Collapsible>
-                    <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
-                        Pricing
-                    </Link>
-                    <Collapsible className="grid gap-4">
-                        <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
-                            Resources
-                            <ChevronRightIcon className="ml-auto h-5 w-5 transition-all" />
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                            <div className="-mx-6 grid gap-6 bg-gray-100 p-6 dark:bg-gray-800">
-                                <Link className="group grid h-auto w-full justify-start gap-1" href="#">
-                                    <div className="text-sm font-medium leading-none group-hover:underline">Blog</div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Read our latest blog posts.
-                                    </div>
-                                </Link>
-                                <Link className="group grid h-auto w-full justify-start gap-1" href="#">
-                                    <div className="text-sm font-medium leading-none group-hover:underline">
-                                        Documentation
-                                    </div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Learn how to use our products.
-                                    </div>
-                                </Link>
-                                <Link className="group grid h-auto w-full justify-start gap-1" href="#">
-                                    <div className="text-sm font-medium leading-none group-hover:underline">
-                                        Help Center
-                                    </div>
-                                    <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                                        Get help with our products.
-                                    </div>
-                                </Link>
-                            </div>
-                        </CollapsibleContent>
-                    </Collapsible>
-                    <Link className="flex w-full items-center py-2 text-lg font-semibold" href="#">
+                    <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/#about">
                         About
                     </Link>
                     <Link className="flex w-full items-center py-2 text-lg font-semibold" href="/contact">
